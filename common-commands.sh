@@ -6,6 +6,7 @@ docker build . -f Dockerfile -t ghcr.io/hcdp/demo-container:mdodge
 # The `-f` flag describes which Dockerfile to build from. In our case, it's redundant as the build command defaults to just 
 #    "Dockerfile" in the current directory if the flag isn't present.
 # The `-t` flag describes what to tag the container as. 
+# Optional: add the --no-cache flag before the `.` to prevent caching from being used.
 
 # Copy a container to a different tag:
 docker tag ghcr.io/hcdp/demo-container:mdodge ghcr.io/hcdp/demo-container:latest

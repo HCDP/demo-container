@@ -60,7 +60,7 @@ RUN gcc hello.c -o hello
 
 # --- Final Settings --- #
 # The last-used WORKDIR becomes the default directory in the container.
-WORKDIR /control-script
+WORKDIR /control-scripts
 
 # The CMD parameter defines what to do when the container is launched without a program specified in CLI.
 CMD [ "/bin/bash", "/control-scripts/task.sh" ]
